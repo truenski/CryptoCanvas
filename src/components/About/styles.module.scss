@@ -1,0 +1,156 @@
+.container {
+  position: relative;
+
+  .img_polys {
+    position: absolute;
+    right: 0;
+    top: -193px;
+  }
+
+  .img_polys2 {
+    position: absolute;
+    bottom: -55rem;
+    left: 0;
+    height: 1100px;
+    width: 800px;
+  }
+}
+
+.content {
+  max-width: 988px;
+  width: 100%;
+  margin: 100px auto;
+
+  .title {
+    font-family: "Readex Pro", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    background: #1971d9;
+    background: linear-gradient(to right, #1971d9 0%, #043a7a 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: justify;
+  }
+}
+
+.partnersContainer {
+  margin: 100px auto;
+  max-width: 1120px;
+
+  .about_title {
+    color: #0e54a7;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 62px;
+    margin: 0;
+    margin-bottom: 10px;
+    align-self: right;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    > a > div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-right: 25px;
+      margin-bottom: 55px;
+
+      &:hover {
+        transition: 0.5s;
+        transform: translateY(-10px);
+      }
+      transition: 0.3s;
+
+      > img {
+        object-fit: cover;
+        max-width: 184px;
+
+        width: 184px;
+        height: 184px;
+        display: block;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    .img_polys,
+    .img_polys2 {
+      display: none;
+    }
+  }
+
+  .content {
+    .title {
+      font-size: 42px;
+      line-height: 59px;
+    }
+
+    p {
+      margin: 0px 20px;
+      font-size: 20px;
+      line-height: 28px;
+      padding: 0 84px;
+    }
+  }
+
+  .partnersContainer {
+    padding: 0 50px;
+
+    .about_title {
+      font-size: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    margin: 0 auto;
+
+    .title {
+      font-size: 26px;
+      line-height: 32px;
+      padding: 0 75px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 19px;
+      padding: 0;
+      margin-bottom: 80px;
+    }
+  }
+
+  .partnersContainer {
+    margin: 0 auto;
+
+    .about_title {
+      font-size: 26px;
+    }
+  }
+}

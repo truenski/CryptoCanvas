@@ -1,0 +1,192 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex-wrap: wrap-reverse;
+  filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.15));
+  border-radius: 26px;
+  // margin: 0px 180px;
+  border: double 10px transparent;
+  background-image: linear-gradient(#ebf4ff, #ebf4ff), linear-gradient(to bottom, #91dcf0, #5199ee);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  // margin: 0px 360px;
+
+  max-width: 60vw;
+  // max-width: 1169px;
+  width: 100%;
+  margin: 0 auto;
+
+  .row {
+    padding: 70px 90px;
+    width: 50%;
+
+    h1 {
+      font-weight: 500;
+      font-family: "Readex Pro", sans-serif;
+      font-size: 54px;
+      background: #1971d9;
+      background: -webkit-linear-gradient(to bottom, #1971d9 0%, #043a7a 100%);
+      background: -moz-linear-gradient(to bottom, #1971d9 0%, #043a7a 100%);
+      background: linear-gradient(to bottom, #1971d9 0%, #043a7a 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 67px;
+      width: 452px;
+
+      @media screen and (max-width: 1150px) {
+        text-align: center;
+        font-size: 30px;
+        width: auto;
+      }
+    }
+    img {
+      // width: 280px;
+      width: 400px;
+      height: auto;
+    }
+    button {
+      border-radius: 53px;
+      padding: 8px 40px;
+      font-weight: 600;
+      border: 4px solid #1971d9;
+      background-color: transparent;
+      background: #1971d9;
+      background: linear-gradient(to bottom, #1971d9 0%, #043a7a 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Readex Pro", sans-serif;
+      font-size: 18px;
+      width: 224px;
+      height: 44px;
+      font-family: "Readex Pro", sans-serif;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 80vw;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    ::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 26px;
+      padding: 0px;
+      background: transparent;
+      mask-composite: exclude;
+    }
+
+    .row {
+      img {
+        width: 280px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    border: double 7.2px transparent;
+
+    .row {
+      &:nth-child(1) {
+        padding: 0 70px;
+
+        h1 {
+          text-align: start;
+          font-family: "Readex Pro", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 38.8948px;
+          line-height: 49px;
+          background: linear-gradient(180deg, #1971d9 0%, #043a7a 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        button {
+          width: 161px;
+          height: 31px;
+          border: 2.8px solid #1971d9;
+          background: linear-gradient(0deg, #1971d9, #043a7a);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .container {
+    margin-top: 50px;
+
+    .row {
+      padding: 70px 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    position: relative;
+    border: double 2.93px transparent;
+    background-image: linear-gradient(#ebf4ff, #ebf4ff), linear-gradient(to bottom, #91dcf0, #5199ee);
+
+    .row {
+      width: 100%;
+      padding: 0;
+
+      &:nth-child(2) {
+        position: absolute;
+        // top: 100px;
+        width: 80%;
+      }
+
+      &:nth-child(1) {
+        height: 378px;
+        padding: 0;
+
+        h1 {
+          text-align: center;
+          font-size: 22px;
+        }
+
+        button {
+          width: 295px;
+          height: 32px;
+          position: absolute;
+          top: 318px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          border: 1.4px solid #1971d9;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,398 @@
+.content {
+  position: relative;
+  margin-bottom: 500px;
+
+  .img_polys {
+    position: absolute;
+    right: 0;
+    top: -151px;
+  }
+
+  .img_polys2 {
+    position: absolute;
+    top: -36rem;
+    left: 0;
+  }
+
+  .img_polys3 {
+    display: none;
+    position: absolute;
+    top: 1015px;
+    right: 0;
+  }
+
+  .header {
+    text-align: center;
+    h1 {
+      font-family: "Readex Pro", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 80px;
+      background: #1971d9;
+      background: linear-gradient(to right, #1971d9 0%, #043a7a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 50px 0px;
+    }
+    .filter {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .inputText {
+        border-radius: 53px;
+        padding: 10px 20px;
+        color: #000;
+        background-color: #d4e3f5;
+        display: flex;
+
+        img {
+          cursor: pointer;
+        }
+
+        input {
+          padding: 0 10px;
+          border: 0;
+          outline: none;
+          background-color: transparent;
+          width: 300px;
+          color: #999595;
+          font-family: "Readex Pro", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+
+          &:focus {
+            color: #000000;
+          }
+        }
+      }
+
+      select {
+        padding: 12px 20px;
+        color: #000;
+        background-color: #d4e3f5;
+        border: 0;
+        outline: none;
+        border-radius: 53px;
+        width: 300px;
+        margin: 0 10px;
+        position: relative;
+        appearance: none;
+        background-image: url("/img_arrow.svg");
+        background-repeat: no-repeat;
+        background-position: 267px 16px;
+        cursor: pointer;
+        color: #7b7b7b;
+        font-family: "Readex Pro", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+
+        @media screen and (max-width: 1024px) {
+          margin: 20px;
+          width: 360px;
+        }
+      }
+    }
+  }
+  .colections {
+    margin: 30px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+
+    .card {
+      background-color: #fff;
+      border-radius: 20px;
+      width: 321px;
+      height: 433px;
+      margin: 50px 30px;
+      background-repeat: no-repeat;
+      background-position: inherit;
+      cursor: pointer;
+      position: relative;
+      background-size: cover;
+
+      .container_image_hover {
+        border-radius: 18px;
+        // max-width: 260px;
+        width: 100%;
+        height: 43%;
+        position: absolute;
+        // top: -11%;
+        display: none;
+        transition: 0.3s;
+
+        img {
+          width: 100%;
+          margin-top: 76px;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        &:hover {
+          backdrop-filter: blur(2px);
+        }
+      }
+
+      &:hover .container_image_hover {
+        display: block;
+      }
+
+      .info {
+        background-color: #fff;
+        position: relative;
+        top: 44%;
+        border: 1px solid #fff;
+        transform: translateY(105%);
+        height: 121px;
+
+        border-bottom-left-radius: 24px 24px;
+        border-bottom-right-radius: 24px 24px;
+        padding-bottom: 20px;
+
+        span {
+          width: 143px;
+          height: 30px;
+          margin-top: -23px;
+
+          background: linear-gradient(180deg, rgba(25, 113, 217, 0.7) 0%, rgba(4, 58, 122, 0.7) 100%);
+          box-shadow: 0px 5.58049px 13.9512px -4.88293px rgba(0, 0, 0, 0.5);
+          backdrop-filter: blur(5px);
+
+          text-align: center;
+          font-family: "Readex Pro", sans-serif;
+          font-size: 12px;
+          border-radius: 36.9707px;
+          padding: 5px 10px;
+          color: #fff;
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        h1 {
+          font-family: "Readex Pro", sans-serif;
+          padding: 0 31px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          color: #0e54a7;
+          margin-top: 10px;
+        }
+        .buttons {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 10px;
+
+          button {
+            width: 167px;
+            height: 44px;
+            background: red;
+            background: linear-gradient(180deg, #1971d9 0%, #043a7a 100%);
+            border-radius: 53px;
+            color: #fff;
+            border: 0;
+            padding: 10px 50px;
+            font-family: "Readex Pro", sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+          }
+          .price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.65);
+            box-shadow: 0 8px 32px 0 rgba(142, 142, 151, 0.37);
+            backdrop-filter: blur(19px);
+            -webkit-backdrop-filter: blur(19px);
+            border-radius: 53px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            margin-left: -50px;
+            padding-left: 70px;
+            padding-right: 20px;
+            z-index: -1;
+            height: 44px;
+            font-size: 30px;
+            font-family: "Readex Pro", sans-serif;
+            font-weight: 700;
+            color: #0e54a7;
+
+            img {
+              margin-left: 5px;
+            }
+
+            .logo_price_mobile {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .content {
+    .colections {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .img_polys,
+  .img_polys2,
+  .img_polys3 {
+    display: none;
+  }
+
+  .content {
+    .header {
+      h1 {
+        font-family: "Readex Pro", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 52px;
+        text-align: center;
+        background: linear-gradient(180deg, #1971d9 0%, #043a7a 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .filter {
+        .inputText {
+          input {
+            width: 258px;
+          }
+        }
+
+        select {
+          width: 213px;
+          background-position: 177px 19px;
+        }
+      }
+    }
+    .colections {
+      z-index: 0;
+
+      .card {
+        width: 260px;
+        height: 351px;
+        margin: 40px 20px;
+
+        .info {
+          .buttons {
+            button {
+              width: 135px;
+              height: 36px;
+              font-size: 14px;
+            }
+
+            .price {
+              padding-left: 54px;
+              font-size: 24px;
+              width: 135px;
+              height: 36px;
+              background: #ecf3fb;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    .header {
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        margin: 40px 0 24px 0;
+      }
+
+      .filter {
+        .inputText {
+          input {
+            width: 266px;
+          }
+        }
+
+        select {
+          padding: 12px 33px;
+          background-position: 293px 16px;
+          width: 332px;
+          background-size: 23px 16px;
+        }
+      }
+    }
+
+    .colections {
+      z-index: 0;
+      margin: 0;
+
+      .card {
+        width: 267px;
+        height: 360px;
+
+        .info {
+          border: 1px solid transparent;
+          background: #1d3154;
+
+          h1 {
+            padding: 10px 31px;
+            font-size: 14px;
+            line-height: 19px;
+            color: #fff;
+          }
+
+          .buttons {
+            padding: 0 12px;
+            button {
+              width: 138px;
+              height: 36px;
+              font-size: 14px;
+            }
+
+            .price {
+              width: 149px;
+              height: 36px;
+              font-size: 24px;
+              box-shadow: none;
+              border: none;
+              padding-left: 75px;
+              padding-right: 8px;
+              color: #fff;
+              background: #374e72;
+
+              h3 {
+                padding-left: 8px;
+              }
+
+              img {
+                display: none;
+              }
+
+              .logo_price_mobile {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

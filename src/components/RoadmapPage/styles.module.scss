@@ -1,0 +1,353 @@
+.container {
+  position: relative;
+
+  .img_polys {
+    position: absolute;
+    right: 0;
+    top: -151px;
+  }
+
+  .img_polys2 {
+    position: absolute;
+    top: 617px;
+    left: 0;
+  }
+
+  .img_polys3 {
+    position: absolute;
+    top: 1061px;
+    right: 0;
+  }
+}
+
+.content {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  h1 {
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 500;
+    font-size: 62px;
+    line-height: 80px;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(180deg, #1971d9 0%, #043a7a 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    .row {
+      padding: 0 140px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 30px;
+
+      &:nth-child(2) {
+        align-self: flex-end;
+      }
+
+      &:nth-child(4) {
+        align-self: flex-end;
+      }
+
+      img {
+        margin: 40px 30px;
+        width: 120px;
+        height: auto;
+      }
+
+      .info {
+        h1 {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 28px;
+          margin: -40px 0px;
+          text-align: left;
+        }
+
+        p {
+          width: 432px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+        }
+
+        &:nth-child(1) {
+          h1 {
+            text-align: end;
+          }
+          text-align: end;
+        }
+
+        img {
+          margin: 0px;
+        }
+      }
+
+      .roadmap1 {
+        width: 240.83px;
+        height: 240.83px;
+        left: 108px;
+        top: 290px;
+      }
+      .roadmap2 {
+        width: 240.83px;
+        height: 240.83px;
+        left: 888px;
+        top: 460px;
+      }
+      .roadmap3 {
+        width: 240.83px;
+        height: 240.83px;
+        left: 118px;
+        top: 590px;
+      }
+      .roadmap4 {
+        width: 240.83px;
+        height: 240.83px;
+        left: 898px;
+        top: 788px;
+      }
+    }
+
+    .container_roadmap_rotate {
+      padding: 0px 26rem;
+      position: relative;
+
+      img {
+        transform: rotate(30deg);
+        box-shadow: 10.41747px 27.8253px 8.2201px rgb(0 0 0 / 35%);
+      }
+    }
+
+    .container_roadmap_rotate2 {
+      padding: 0px 26rem;
+      position: relative;
+
+      img {
+        transform: rotate(-30deg);
+        box-shadow: -16.58253px 27.8253px 8.2201px rgb(0 0 0 / 35%);
+      }
+    }
+
+    .container_roadmap_rotate3 {
+      @extend .container_roadmap_rotate;
+    }
+  }
+
+  /* More */
+  .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #000;
+      font-family: "Montserrat", sans-serif;
+    }
+    a {
+      width: 224px;
+      height: 44px;
+      background: linear-gradient(180deg, #1971d9 0%, #043a7a 100%);
+      border-radius: 53px;
+      padding: 10px 80px;
+      color: #fff;
+      cursor: pointer;
+      font-family: "Readex Pro", sans-serif;
+      font-size: 18px;
+    }
+  }
+}
+
+.title,
+.ContentMobile {
+  display: none;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  a {
+    background: linear-gradient(180deg, #1971d9 0%, #043a7a 100%);
+    border-radius: 53px;
+    padding: 10px 80px;
+    color: #fff;
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    .img_polys,
+    .img_polys2,
+    .img_polys3 {
+      display: none;
+    }
+  }
+  .content {
+    h1 {
+      font-size: 42px;
+      line-height: 59px;
+    }
+
+    .container {
+      .row {
+        padding: 0;
+        margin: 0 30px;
+
+        .info {
+          h1 {
+            font-size: 21px;
+          }
+
+          p {
+            margin-top: 25px;
+            font-size: 18px;
+          }
+
+          &:nth-child(1) {
+            img {
+              transform: scale(-1);
+            }
+          }
+        }
+
+        .roadmap1,
+        .roadmap2,
+        .roadmap3,
+        .roadmap4 {
+          width: 178px;
+          height: 178px;
+        }
+      }
+    }
+
+    .more {
+      a {
+        width: 216px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    .container,
+    .more {
+      display: none;
+    }
+  }
+
+  .title {
+    font-size: 26px;
+    line-height: 32px;
+    background: linear-gradient(180deg, #1971d9 0%, #043a7a 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 62px;
+  }
+
+  .ContentMobile {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      font-family: "Mukta";
+      text-align: center;
+
+      span {
+        font-weight: bold;
+        color: var(--secondary);
+      }
+    }
+    .line {
+      margin-top: 20px;
+    }
+
+    .more {
+      margin-top: 80px;
+
+      a {
+        width: 216px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+      }
+
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .phases {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 120px;
+      height: auto;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-family: sans-serif;
+      font-size: 15px;
+      line-height: 18px;
+      color: #408ae0;
+      margin: 0px 10px;
+    }
+    .pLeft {
+      text-align: left;
+    }
+    .pRight {
+      text-align: right;
+    }
+  }
+}

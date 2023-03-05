@@ -1,0 +1,237 @@
+.container_login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ebf4ff;
+  position: relative;
+
+  .logo {
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    cursor: pointer;
+  }
+
+  .img_polys2 {
+    position: absolute;
+    left: -26px;
+    top: -39px;
+  }
+
+  .img_polys3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.login {
+  position: relative;
+  z-index: 2;
+  width: 738px;
+  min-height: 505px;
+  background: #fcfcfc;
+  box-shadow: 0px 4px 10px rgba(19, 46, 80, 0.18);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .rectangle {
+    width: 280px;
+    height: 3px;
+    left: 151px;
+    top: 95px;
+    background: linear-gradient(180deg, #91dcf0 50%, #5199ee 100%);
+    border-radius: 35px;
+  }
+
+  .cross {
+    cursor: pointer;
+    left: 535px;
+    top: 55px;
+    align-self: flex-end;
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+
+  form {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      margin: 0;
+      margin-bottom: 12px;
+      width: 100%;
+      font-family: "Readex Pro", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      background: linear-gradient(0deg, #1971d9, #1971d9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    span {
+      width: 147px;
+      height: 18px;
+      left: 138px;
+      top: 230px;
+      font-family: "Readex Pro";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(0deg, #1971d9, #1971d9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      span:first-child {
+        top: 68px;
+      }
+      span,
+      .custom_checkbox {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  label {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 5px;
+    list-style: none;
+    cursor: pointer;
+    margin: 15px auto;
+    color: #0e54a7;
+    opacity: 0.4;
+  }
+
+  hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    top: 85px;
+    position: relative;
+  }
+}
+
+.active {
+  font-family: "Readex Pro", sans-serif;
+  font-style: bold;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  background: linear-gradient(0deg, #1971d9, #1971d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+}
+
+.text {
+  width: 371px;
+  height: 40px;
+  background: #ededed;
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+}
+
+.signin {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  background: linear-gradient(180deg, #1971d9 0%, #043a7a 100%);
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  width: 224px;
+  height: 44px;
+  border-radius: 53px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .container_login {
+    .img_polys2,
+    .img_polys3,
+    .logo {
+      display: none;
+    }
+  }
+
+  .login {
+    .cross {
+      img {
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+
+  .signin {
+    width: 344px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .login {
+    width: 307px;
+    min-height: 349px;
+
+    form {
+      padding-top: 35px;
+    }
+
+    .cross {
+      display: none;
+      img {
+        width: 21px;
+        height: 21px;
+      }
+    }
+
+    .rectangle {
+      width: 184px;
+    }
+  }
+
+  .active {
+    margin: 30px 0 6px 0;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .text {
+    margin-top: 0;
+    width: 254px;
+    height: 34px;
+    border-radius: 12px;
+  }
+
+  .signin {
+    width: 178px;
+    height: 32px;
+    font-size: 14px;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 42px;
+  }
+}

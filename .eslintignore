@@ -1,0 +1,7 @@
+node_modules
+.next
+dist
+build
+src/services/benft/*
+src/hooks/mint.tsx
+src/components/ColectionDetail/index.tsx

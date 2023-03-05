@@ -1,0 +1,961 @@
+.container_edit {
+  width: 100%;
+  height: 103vh;
+  background: #fff;
+}
+
+.text {
+  position: absolute;
+  width: 504px;
+  height: 45px;
+  left: 143px;
+  top: 60px;
+
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* #1971D9 */
+
+  background: linear-gradient(0deg, #1971d9, #1971d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  //text-fill-color: transparent;
+}
+
+.line {
+  position: absolute;
+  width: 1134px;
+  height: 5px;
+  left: 146px;
+  top: 150px;
+
+  background: linear-gradient(180deg, #91dcf0 50%, #5199ee 100%);
+  border-radius: 35px;
+
+  .deleteButton {
+    background: #f5f5f5;
+    padding: 5px;
+    margin: 10px 0;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: red;
+  }
+}
+
+.imgcapa {
+  position: absolute;
+  width: 115px;
+  height: 18px;
+  left: 155px;
+  top: 170px;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(0deg, #1971d9, #1971d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.rectangle {
+  button {
+    position: absolute;
+    border: none;
+    color: red;
+    background: none;
+    top: 234px;
+    left: 163px;
+    z-index: 1;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  label {
+    position: absolute;
+    left: 155px;
+    top: 225px;
+    border: 1px solid red;
+    width: 200px;
+    height: 192px;
+    padding: 20px 20px;
+    background: #f5f5f5;
+    border: 1px dashed #91dcf0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    font-family: "Readex Pro", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #423f55;
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      left: 50%;
+      transform: translate(-50%);
+      top: 40px;
+      cursor: pointer;
+    }
+
+    input {
+      visibility: hidden;
+    }
+  }
+
+  img {
+    position: absolute;
+    width: 200px;
+    height: 192px;
+    left: 155px;
+    top: 225px;
+  }
+
+  .upload {
+    position: absolute;
+    width: 183px;
+    height: 14px;
+    left: 33px;
+    cursor: pointer;
+    top: 100px;
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #423f55;
+  }
+}
+
+.nome {
+  position: absolute;
+  width: 118px;
+  height: 18px;
+  left: 415px;
+  top: 170px;
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* #1971D9 */
+
+  background: linear-gradient(0deg, #1971d9, #1971d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.rectanglenome {
+  position: absolute;
+  width: 402px;
+  height: 40px;
+  left: 415px;
+  top: 225px;
+  border: none;
+
+  background-color: #ededed;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.description {
+  position: absolute;
+  width: 144px;
+  height: 18px;
+  left: 415px;
+  top: 270px;
+
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* #1971D9 */
+
+  background: linear-gradient(0deg, #1971d9, #1971d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.descriçaõ {
+  position: absolute;
+  border: none;
+  width: 402px;
+  height: 80px;
+  left: 415px;
+  top: 326px;
+
+  background: #ededed;
+  border-radius: 8px;
+}
+
+.slide {
+  position: absolute;
+  width: 120px;
+  height: 18px;
+  left: 155px;
+  top: 423px;
+
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* #1971D9 */
+
+  background: linear-gradient(0deg, #1971d9, #1971d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.uploadslide {
+  position: absolute;
+  width: 148.75px;
+  height: 114px;
+  left: 155px;
+  top: 473px;
+
+  background: #f5f5f5;
+  border: 0.59375px dashed #91dcf0;
+  box-sizing: border-box;
+  border-radius: 11.875px;
+
+  .uploadimg {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    left: 55px;
+    top: 23px;
+    bottom: 15.6px;
+  }
+
+  .upload1 {
+    position: absolute;
+    width: 108.66px;
+    height: 10px;
+    left: 24px;
+    top: 77px;
+
+    font-family: "Readex Pro";
+    font-style: bold;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 8px;
+    /* identical to box height, or 117% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #423f55;
+  }
+}
+.info {
+  position: absolute;
+  width: 108.66px;
+  height: 10px;
+  left: 182px;
+  top: 593px;
+
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 8px;
+  /* identical to box height, or 117% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #423f55;
+}
+
+.cancel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 165px;
+  height: 42px;
+  left: 148px;
+  top: 664px;
+  cursor: pointer;
+  border-radius: 53px;
+}
+
+.save {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  width: 147px;
+  height: 42px;
+  left: 325px;
+  top: 664px;
+
+  border-radius: 53px;
+}
+
+.price {
+  position: absolute;
+  width: 82px;
+  height: 18px;
+  left: 902px;
+  top: 200px;
+
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  background: linear-gradient(0deg, #1971d9, #1971d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.priceBox {
+  position: absolute;
+  width: 370px;
+  height: 40px;
+  left: 902px;
+  top: 225px;
+  border: none;
+
+  background: #ededed;
+  border-radius: 8px;
+}
+
+.quantity {
+  position: absolute;
+  width: 156px;
+  height: 18px;
+  left: 902px;
+  top: 290px;
+
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  display: flex;
+  align-items: center;
+
+  /* #1971D9 */
+
+  background: linear-gradient(0deg, #1971d9, #1971d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.quantityBox {
+  position: absolute;
+  width: 370px;
+  height: 40px;
+  left: 902px;
+  top: 315px;
+  border: none;
+
+  background: #ededed;
+  border-radius: 8px;
+}
+
+.label_roadmaps {
+  position: absolute;
+  top: 380px;
+  left: 895px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    margin: 0;
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    background: linear-gradient(0deg, #1971d9, #1971d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 77px;
+    top: 42px;
+    background: url("/arrow_input_select.svg");
+    background-repeat: no-repeat;
+  }
+
+  select {
+    appearance: none;
+    margin-top: 7px;
+    height: 41px;
+    width: 99px;
+    background: #ededed;
+    border-radius: 8px;
+    border: none;
+    padding: 0 15px;
+    outline: none;
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+}
+
+.label_text_step1 {
+  position: absolute;
+  top: 460px;
+  left: 895px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    margin: 0;
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    background: linear-gradient(0deg, #1971d9, #1971d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  input {
+    margin-top: 7px;
+    width: 299px;
+    height: 117px;
+    background: #ededed;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+  }
+}
+
+.label_text_step2 {
+  position: absolute;
+  top: 614px;
+  left: 895px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    margin: 0;
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    background: linear-gradient(0deg, #1971d9, #1971d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  input {
+    margin-top: 7px;
+    width: 299px;
+    height: 117px;
+    background: #ededed;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+  }
+}
+
+.roadmap {
+  position: absolute;
+  left: 952px;
+  top: 365px;
+
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* #1971D9 */
+
+  background: linear-gradient(0deg, #1971d9, #1971d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.container_step {
+  margin-bottom: 100px;
+  position: absolute;
+  left: 905px;
+  top: 464px;
+  max-width: 400px;
+  width: 100%;
+  min-height: 145px;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  .step {
+    // left: 852px;
+    // top: 440px;
+    margin-top: 10px;
+    font-family: "Readex Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(0deg, #1971d9, #1971d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    & + .step {
+      margin-top: 50px;
+    }
+  }
+  .stepBox {
+    margin-top: 10px;
+    // position: absolute;
+    background: #ededed;
+    width: 100%;
+    height: 50px;
+    // left: 848px;
+    // top: 480px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 10px;
+  }
+}
+
+// .step {
+//   position: absolute;
+//   left: 952px;
+
+//   top: 440px;
+
+//   font-family: "Readex Pro";
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 18px;
+//   /* identical to box height */
+
+//   display: flex;
+//   align-items: center;
+
+//   /* #1971D9 */
+
+//   background: linear-gradient(0deg, #1971d9, #1971d9);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   background-clip: text;
+// }
+// .stepBox {
+//   position: absolute;
+//   background: #ededed;
+//   width: 402px;
+//   height: 156px;
+//   left: 952px;
+//   top: 480px;
+//   border: none;
+//   border-radius: 8px;
+// }
+
+.container_images {
+  position: absolute;
+  top: 478px;
+  left: 148px;
+  max-width: 680px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  overflow: scroll;
+
+  // img {
+  //   width: 118px;
+  //   height: 115.26px;
+  // }
+
+  label {
+    width: 118px;
+    height: 115.26px;
+    padding: 26px 20px;
+    background: #f5f5f5;
+    border: 1px dashed #91dcf0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: "Readex Pro", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: #423f55;
+
+    input {
+      visibility: hidden;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+  }
+
+  > div {
+    width: 118px;
+    height: 115.26px;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  button {
+    position: absolute;
+    border: none;
+    color: red;
+    background: none;
+    top: 5px;
+    left: 3px;
+    cursor: pointer;
+  }
+
+  /* custom scrollbar */
+  &::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .container_step {
+    max-height: 200px;
+
+    // &::-webkit-scrollbar {
+    //   display: block;
+    // }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .text {
+    font-size: 28px;
+    line-height: 39px;
+    left: 35px;
+  }
+
+  .line {
+    left: 35px;
+    width: 95vw;
+  }
+
+  .imgcapa {
+    left: 35px;
+  }
+
+  .rectangle {
+    label {
+      left: 35px;
+    }
+    button {
+      left: 35px;
+    }
+
+    img {
+      left: 35px;
+    }
+  }
+
+  .slide {
+    left: 35px;
+  }
+
+  .container_images {
+    left: 35px;
+    // border: 1px solid red;
+    max-width: 540px;
+  }
+
+  .cancel {
+    left: 35px;
+  }
+
+  .save {
+    left: 215px;
+  }
+
+  .nome,
+  .rectanglenome,
+  .description,
+  .descriçaõ {
+    left: 277px;
+  }
+
+  .rectanglenome,
+  .descriçaõ,
+  .priceBox,
+  .quantityBox {
+    width: 285px;
+  }
+
+  .price,
+  .priceBox,
+  .quantity,
+  .quantityBox,
+  .label_roadmaps,
+  .label_text_step1,
+  .label_text_step2,
+  .container_step {
+    left: 590px;
+  }
+
+  .label_roadmaps,
+  .label_text_step1,
+  .label_text_step2 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 892px) {
+  .container_edit {
+    height: 258vh;
+  }
+
+  .imgcapa,
+  .nome,
+  .rectanglenome,
+  .description,
+  .descriçaõ,
+  .price,
+  .priceBox,
+  .quantityBox,
+  .quantity,
+  .label_roadmaps,
+  .label_text_step1,
+  .label_text_step2,
+  .slide,
+  .container_images,
+  .container_step {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .rectangle {
+    label {
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    button {
+      transform: translate(-40%);
+      left: 40%;
+    }
+
+    img {
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .nome {
+    top: 454px;
+  }
+
+  .rectanglenome {
+    top: 505px;
+  }
+
+  .description {
+    top: 544px;
+  }
+
+  .descriçaõ {
+    top: 594px;
+  }
+
+  .price {
+    top: 694px;
+  }
+
+  .priceBox {
+    top: 724px;
+  }
+
+  .quantity {
+    top: 789px;
+  }
+
+  .quantityBox {
+    top: 818px;
+  }
+
+  .label_roadmaps {
+    top: 884px;
+  }
+
+  .container_step {
+    top: 974px;
+    max-height: 320px;
+  }
+
+  // .label_text_step1 {
+  //   top: 974px;
+  // }
+
+  // .label_text_step2 {
+  //   top: 1139px;
+  // }
+
+  .slide {
+    top: 1286px;
+  }
+
+  .container_images {
+    top: 1367px;
+    max-width: 272px;
+    max-height: 523px;
+    height: 100%;
+  }
+
+  .cancel {
+    top: 1919px;
+    left: 29%;
+  }
+
+  .save {
+    top: 1919px;
+    left: 51%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container_edit {
+    overflow-x: hidden;
+  }
+
+  .text {
+    width: 200px;
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 38px;
+  }
+
+  .line {
+    width: 88vw;
+  }
+
+  .rectangle {
+    button {
+      transform: translate(-29%);
+      left: 29%;
+    }
+  }
+
+  .cancel {
+    left: 5%;
+  }
+
+  .save {
+    left: 52%;
+  }
+}

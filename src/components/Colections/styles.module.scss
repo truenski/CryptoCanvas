@@ -1,0 +1,233 @@
+.container {
+  margin-left: 80px;
+  overflow-x: hidden;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    margin: 0px 30px;
+  }
+  h1 {
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 62px;
+    color: #0e54a7;
+  }
+
+  a {
+    display: none;
+  }
+}
+
+.cards {
+  width: 321px;
+  height: 433px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container_image_hover {
+    // border-radius: 18px;
+    max-width: 321px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    transition: 0.3s;
+
+    img {
+      width: 100%;
+      margin-top: 39%;
+      height: 42%;
+      // border: 1px solid green;
+      border-radius: 0;
+      object-fit: cover;
+    }
+
+    &:hover {
+      backdrop-filter: blur(2px);
+    }
+  }
+
+  &:hover .container_image_hover {
+    display: block;
+  }
+
+  .name {
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+    top: 10%;
+    transform: translateY(-100%);
+    z-index: 1;
+
+    p {
+      padding: 5px 10px;
+      background: rgba(83, 83, 83, 0.35);
+      backdrop-filter: blur(20px);
+      /* Note: backdrop-filter has minimal browser support */
+      border-radius: 19.5px;
+      margin-top: 30px;
+      color: #fff;
+      font-family: "Readex Pro", sans-serif;
+      font-weight: 500;
+    }
+  }
+  .buttons {
+    position: relative;
+    top: 85%;
+    transform: translateY(-100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+      width: 167px;
+      height: 44px;
+      background: linear-gradient(180deg, #1971d9 0%, #043a7a 100%);
+      border-radius: 53px;
+      color: #fff;
+      border: 0;
+      padding: 10px 60px;
+      font-size: 18px;
+      font-family: "Readex Pro", sans-serif;
+      font-weight: 500;
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      // background: rgba(255, 255, 255, 0.65);
+      // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+      // background: linear-gradient(0deg, #ffffff, #ffffff);
+      // backdrop-filter: blur(30px);
+
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(30px);
+      background-color: rgba(255, 255, 255, 0.637);
+
+      // backdrop-filter: blur(19px);
+      // -webkit-backdrop-filter: blur(19px);
+      border-radius: 53px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      margin-left: -150px;
+      padding-left: 70px;
+      padding-right: 20px;
+      z-index: -1;
+      height: 44px;
+      width: 180px;
+
+      h3 {
+        margin-right: 10px;
+        color: #1971d9;
+        font-size: 18px;
+        font-family: "Readex Pro", sans-serif;
+        font-weight: 500;
+      }
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.itens {
+  margin: 0px;
+  // width: 400px !important;
+
+  @media screen and (max-width: 1024px) {
+    // width: 354px !important;
+
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    .cards {
+      margin-left: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 832px;
+    width: 100%;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 36px;
+      padding: 0 45px;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    a {
+      padding: 0 72px;
+      display: block;
+      font-family: "Readex Pro", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      background: linear-gradient(180deg, #1971d9 0%, #043a7a 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0.5;
+    }
+
+    .cards {
+      margin-left: 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 0 auto;
+    width: 95vw;
+
+    h1 {
+      text-align: start;
+      font-size: 26px;
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    a {
+      display: block;
+      padding: 0 20px;
+    }
+
+    .cards {
+      // width: 316px;
+      // height: 301px;
+      margin-left: 40px;
+    }
+  }
+
+  // .itens {
+  //   margin: 0px;
+  //   width: 193px;
+  //   height: 261px;
+  // }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    .cards {
+      margin-left: 20px;
+    }
+  }
+}
